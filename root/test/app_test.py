@@ -1,6 +1,5 @@
 from root.app import app
 
-
 import unittest
 
 class AppTests(unittest.TestCase):
@@ -18,6 +17,8 @@ class AppTests(unittest.TestCase):
         self.app = app.test_client()
         # propagate the exceptions to the test client
         self.app.testing = True
+
+        pass
 
     def tearDown(self):
         pass
@@ -39,8 +40,8 @@ class AppTests(unittest.TestCase):
         self.assertEqual(result.data, b"it works! Bob")
 
 
-if __name__=='__main__':
-
-    test = AppTests()
-    test.setUp()
-    test.test_home_data()
+# if __name__=='__main__':
+#
+#     test = AppTests()
+#     test.setUp()
+#     test.test_home_data()

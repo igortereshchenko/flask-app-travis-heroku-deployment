@@ -1,0 +1,8 @@
+language: python
+deploy:
+  provider: heroku
+  api_key:
+    secure: 131ee6b6-d5d7-4ce6-8f4a-4ed4dcea6cf7
+  app: flask-travis-heroku-deployment
+  on:
+    repo: igortereshchenko/flask-app-travis-heroku-deployment

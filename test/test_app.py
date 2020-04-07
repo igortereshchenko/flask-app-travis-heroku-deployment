@@ -39,8 +39,8 @@ class AppTests(unittest.TestCase):
         self.assertEqual(result.data, b"it works! Bob")
 
 
-# if __name__=='__main__':
-#
-#     test = AppTests()
-#     test.setUp()
-#     test.test_home_data()
+if __name__=='__main__':
+
+    test = AppTests()
+    test.setUp()
+    test.test_home_data()
